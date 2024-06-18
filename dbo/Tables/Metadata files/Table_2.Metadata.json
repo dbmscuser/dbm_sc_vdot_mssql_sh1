@@ -25,7 +25,7 @@
       "is_masked": false,
       "is_merge_published": false,
       "is_non_sql_subscribed": false,
-      "is_nullable": true,
+      "is_nullable": false,
       "is_replicated": false,
       "is_rowguidcol": false,
       "is_sparse": false,
@@ -44,5 +44,33 @@
     }
   ],
   "Foreign keys": [],
-  "Indexes": []
+  "Indexes": [
+    {
+      "allow_page_locks": true,
+      "allow_row_locks": true,
+      "Columns": [
+        {
+          "is_descending_key": false,
+          "key_ordinal": 1,
+          "name": "col1"
+        }
+      ],
+      "compression_delay": null,
+      "data_space_id": 1,
+      "fill_factor": 0,
+      "filter_definition": null,
+      "has_filter": false,
+      "ignore_dup_key": false,
+      "is_disabled": false,
+      "is_hypothetical": false,
+      "is_padded": false,
+      "is_primary_key": true,
+      "is_unique": true,
+      "name": "pk_table_1_col1",
+      "obj": "Table_2",
+      "schem": "dbo",
+      "type": "Table",
+      "type_desc": "CLUSTERED"
+    }
+  ]
 }
